@@ -1,0 +1,35 @@
+.lightThemeBody {
+	background-color: #F0F0F0;
+	color: #000000;
+}
+
+.lightThemeForms {
+	border: 1px solid #000000;
+	background-color:#CCFFFF;
+  	color: #000000;
+}
+
+.lightThemeButtons {
+  	border: 1px solid #000000;
+	background-color:#CCFFFF;
+  	color: #000000;
+}
+
+.lightThemeButtons:hover {
+  	background-color:#BEBEBE;
+  	color: #000000;
+  	border: 1px solid #000000;
+}
+
+.lightThemeButtons:focus, .lightThemeButtons.focus {
+  	box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.lightThemeFeed {
+  	color: #000000;
+}
+
+.lightProfileImageBorder {
+	border: .4rem solid #F0F0F0;	
+}
+

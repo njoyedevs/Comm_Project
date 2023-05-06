@@ -1,0 +1,34 @@
+.darkThemeBody {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.darkThemeForms {
+	border: 1px solid #F0F0F0;
+	background-color: #666699;
+  	color: #FFFFFF;
+}
+
+.darkThemeButtons {
+  	background-color:#666699;
+  	color: #FFFFFF;
+  	border: 1px solid #FFFFFF;
+}
+
+.darkThemeButtons:hover {
+  	background-color:#909090;
+  	color: #FFFFFF;
+  	border: 1px solid #FFFFFF;
+}
+
+.darkThemeButtons:focus, .darkThemeButtons.focus {
+  	box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.darkThemeFeed {
+  	color: #F0F0F0;
+}
+
+.darkProfileImageBorder {
+	border: .4rem solid  #000000;	
+}

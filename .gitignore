@@ -1,0 +1,29 @@
+# Eclipse, IntelliJ, and other IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+*.metadata/
+.classpath
+.project
+.settings/
+
+# Maven build files
+/target/
+/mvnw
+/mvnw.cmd
+/.mvn/wrapper/
+
+# Gradle build files
+/build/
+.gradle/
+/gradle/
+gradlew
+gradlew.bat
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
