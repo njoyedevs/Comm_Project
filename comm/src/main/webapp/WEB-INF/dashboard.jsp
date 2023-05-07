@@ -54,7 +54,7 @@
 			<div class="profileImageContainer">
 				<c:choose>
 					<c:when test="${!empty userProfileToPopulate.avatar}">
-						<img class="profileImage darkProfileImageBorder lightProfileImageBorder" src="/images/${userProfileToPopulate.user.id}/${userProfileToPopulate.avatar}" alt="Refresh For Profile Image Working To Fix">
+						<img class="profileImage darkProfileImageBorder lightProfileImageBorder" src="/uploads/${userProfileToPopulate.user.id}/${userProfileToPopulate.avatar}" alt="Profile Image">
 					</c:when>
 					<c:otherwise>
 						<img class="profileImage darkProfileImageBorder lightProfileImageBorder" src="/images/testImage.png" alt="Profile Image">
