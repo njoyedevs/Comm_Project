@@ -86,7 +86,8 @@ document.querySelectorAll('.selectChatThreadButton').forEach(button => {
 		
 		        // Use the default avatar if it's not provided in the MessageDTO
 		        if (message.messageCreatorAvatar) {
-		            avatarImage.src = `/images/${message.messageCreatorId}/${message.messageCreatorAvatar}`;
+		            //avatarImage.src = `/images/${message.messageCreatorId}/${message.messageCreatorAvatar}`;
+		        	avatarImage.src = `/uploads/${message.messageCreatorId}/${message.messageCreatorAvatar}`;
 		        } else {
 		            avatarImage.src = '/images/testImage.png';
 		        }

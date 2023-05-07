@@ -3,6 +3,7 @@ package com.njoye.comm.controllers;
 import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -31,6 +32,9 @@ public class MessageController {
     private UserService userService;
 	@Autowired
     private ChatThreadService chatThreadService;
+	
+	@Value("${file.upload-dir}")
+	private String fileUploadDir;
 	
     // Add this method to check if the user is logged in
     private boolean isAuthenticated(HttpSession session) {
@@ -70,12 +74,14 @@ public class MessageController {
 			// Check if there is an uploaded media file
 	        if (media != null && !media.isEmpty()) {
 
-	            String uploadDir = "src/main/resources/static/images/" + userToAssociate.getId();
+	            //String uploadDir = "src/main/resources/static/images/" + userToAssociate.getId();
+	            String uploadDir = fileUploadDir + userToAssociate.getId();
 	            String fileName = StringUtils.cleanPath(media.getOriginalFilename());
 	            FileUploadUtil.saveFile(uploadDir, fileName, media);
 
-		        String mediaUrl = "/images/" + userToAssociate.getId() + "/" + fileName;
-	            message.setMediaUrl(mediaUrl);
+		        //String mediaUrl = "/images/" + userToAssociate.getId() + "/" + fileName;
+	            String mediaUrl = "/uploads/" + userToAssociate.getId() + "/" + fileName;
+		        message.setMediaUrl(mediaUrl);
 	            
 	        }
 

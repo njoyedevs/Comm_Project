@@ -21,7 +21,8 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <link id="dynamic-css" rel="stylesheet" type="text/css" href="/css/colorTheme1.css">
 <!-- Favicon -->
-<link rel="icon" href="/images/CommLogo2.png" type="image/png">
+<!-- <link rel="icon" href="/images/CommLogo2.png" type="image/png">  -->
+<link rel="icon" href="/favicon.ico" type="image/png">
 <!-- Emoji's -->
 <script src="https://cdn.jsdelivr.net/npm/picmo@latest/dist/umd/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@picmo/popup-picker@latest/dist/umd/index.js"></script>

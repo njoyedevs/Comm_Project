@@ -54,6 +54,7 @@
 			<div class="profileImageContainer">
 				<c:choose>
 					<c:when test="${!empty userProfileToPopulate.avatar}">
+						<!-- <img class="profileImage darkProfileImageBorder lightProfileImageBorder" src="/images/${userProfileToPopulate.user.id}/${userProfileToPopulate.avatar}" alt="Refresh For Profile Image Working To Fix"> -->
 						<img class="profileImage darkProfileImageBorder lightProfileImageBorder" src="/uploads/${userProfileToPopulate.user.id}/${userProfileToPopulate.avatar}" alt="Profile Image">
 					</c:when>
 					<c:otherwise>
@@ -113,7 +114,8 @@
 					<c:forEach var="message" items="${selectedChatThreadMessages}">
 						<c:choose>
 							<c:when test="${!empty message.getMessageCreator().getUserProfile().getAvatar()}">
-						  		<div class="message"><img class="chatAvatar" src="/images/${message.getMessageCreator().getId()}/${message.getMessageCreator().getUserProfile().getAvatar()}"/> ${message.getMessageCreator().getUserName()}: ${message.getMessage()}</div>
+						  		<!-- <div class="message"><img class="chatAvatar" src="/images/${message.getMessageCreator().getId()}/${message.getMessageCreator().getUserProfile().getAvatar()}"/> ${message.getMessageCreator().getUserName()}: ${message.getMessage()}</div> -->
+								<div class="message"><img class="chatAvatar" src="/uploads/${message.getMessageCreator().getId()}/${message.getMessageCreator().getUserProfile().getAvatar()}"/> ${message.getMessageCreator().getUserName()}: ${message.getMessage()}</div>
 							</c:when>
 							<c:otherwise>
 								<div class="message"><img class="chatAvatar" src="/images/testImage.png"/> ${message.getMessageCreator().getUserName()}: ${message.getMessage()}</div>
