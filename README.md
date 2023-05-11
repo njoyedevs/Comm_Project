@@ -52,4 +52,22 @@ Configure your MySQL database and update the application.properties file with yo
 Run the application using Spring Boot or the included Maven wrapper.
 Access the application at http://localhost:8080 or your preferred port.
 
+## Quick Tour
+
+1. Login & Registration Screen secured by Bcrypt
+
+![Login & Registration Screen](./LoginRegComm.jpg)
+
+<hr>
+
+2. Dark Mode Dashboard
+
+![Dark Mode Dashboard](./DarkModeDashboard.jpg)
+
+<hr>
+
+3. Light Mode Dashboard
+
+![Light Mode Dashboard](./LightModeDashboard.jpg)
+
 For more detailed instructions and additional information, please refer to the project's GitHub repository.
