@@ -1,7 +1,7 @@
 # Comm_Project
 In this project, Java was utilized to develop a full stack single page webapp with vanilla JavaScript for dynamically rendered messages and interactivity.  To view, visit: http://www.comm.rocks
 
-## CommComm - Social Network Application
+## Comm - Social Network Application
 CommComm is a full stack, single-page social networking application developed using Java SE 17 and various other technologies. The application allows users to participate in dynamic chat threads and offers a unique user experience with features like dark/light mode, image uploads, and AI-generated artwork.
 
 ## Technologies Used
