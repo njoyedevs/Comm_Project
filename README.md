@@ -22,9 +22,6 @@ GIF and Emoji support in chat thread messages
 AI-generated artwork via Midjourney
 Manual CSS design pattern to showcase creativity in design
 
-## Live Demo
-Comm: https://www.comm.rocks
-
 ## Source Code
 GitHub Repository: https://github.com/njoyedevs/Comm_Project
 
